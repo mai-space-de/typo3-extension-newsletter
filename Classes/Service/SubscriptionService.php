@@ -1,12 +1,12 @@
 <?php
 declare(strict_types=1);
-namespace MaiSpace\Newsletter\Service;
+namespace Maispace\MaiNewsletter\Service;
 
-use MaiSpace\Newsletter\Domain\Model\Subscriber;
-use MaiSpace\Newsletter\Domain\Model\SubscriberList;
-use MaiSpace\Newsletter\Domain\Repository\SubscriberRepository;
-use MaiSpace\Newsletter\Event\SubscribedEvent;
-use MaiSpace\Newsletter\Event\UnsubscribedEvent;
+use Maispace\MaiNewsletter\Domain\Model\Subscriber;
+use Maispace\MaiNewsletter\Domain\Model\SubscriberList;
+use Maispace\MaiNewsletter\Domain\Repository\SubscriberRepository;
+use Maispace\MaiNewsletter\Event\SubscribedEvent;
+use Maispace\MaiNewsletter\Event\UnsubscribedEvent;
 use Psr\EventDispatcher\EventDispatcherInterface;
 use Symfony\Component\Mime\Address;
 use TYPO3\CMS\Core\Mail\MailMessage;

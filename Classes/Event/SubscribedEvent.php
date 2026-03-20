@@ -1,8 +1,8 @@
 <?php
 declare(strict_types=1);
-namespace MaiSpace\Newsletter\Event;
+namespace Maispace\MaiNewsletter\Event;
 
-use MaiSpace\Newsletter\Domain\Model\Subscriber;
+use Maispace\MaiNewsletter\Domain\Model\Subscriber;
 
 final class SubscribedEvent
 {

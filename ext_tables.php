@@ -9,15 +9,15 @@ defined('TYPO3') or die();
         \TYPO3\CMS\Core\Imaging\IconRegistry::class
     );
     $iconRegistry->registerIcon(
-        'ext-newsletter-module',
+        'ext-mai-newsletter-module',
         \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
-        ['source' => 'EXT:newsletter/Resources/Public/Icons/Extension.svg']
+        ['source' => 'EXT:mai_newsletter/Resources/Public/Icons/Extension.svg']
     );
 
     // Register static TypoScript template
     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile(
-        'newsletter',
+        'mai_newsletter',
         'Configuration/TypoScript',
-        'Newsletter'
+        'MaiNewsletter'
     );
 })();

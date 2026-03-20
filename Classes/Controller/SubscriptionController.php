@@ -1,9 +1,9 @@
 <?php
 declare(strict_types=1);
-namespace MaiSpace\Newsletter\Controller;
+namespace Maispace\MaiNewsletter\Controller;
 
-use MaiSpace\Newsletter\Domain\Repository\SubscriberListRepository;
-use MaiSpace\Newsletter\Service\SubscriptionService;
+use Maispace\MaiNewsletter\Domain\Repository\SubscriberListRepository;
+use Maispace\MaiNewsletter\Service\SubscriptionService;
 use Psr\Http\Message\ResponseInterface;
 use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
 

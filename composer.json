@@ -1,5 +1,5 @@
 {
-    "name": "maispace/newsletter",
+    "name": "maispace/mai-newsletter",
     "description": "Newsletter management extension for TYPO3",
     "type": "typo3-cms-extension",
     "license": "GPL-2.0-or-later",
@@ -12,12 +12,12 @@
     },
     "autoload": {
         "psr-4": {
-            "MaiSpace\\Newsletter\\": "Classes/"
+            "Maispace\\MaiNewsletter\\": "Classes/"
         }
     },
     "extra": {
         "typo3/cms": {
-            "extension-key": "newsletter"
+            "extension-key": "mai_newsletter"
         }
     }
 }

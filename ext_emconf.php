@@ -1,6 +1,6 @@
 <?php
 $EM_CONF[$_EXTKEY] = [
-    'title' => 'Newsletter',
+    'title' => 'MaiNewsletter',
     'description' => 'Newsletter management extension for TYPO3',
     'category' => 'plugin',
     'author' => 'MaiSpace',

@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-use MaiSpace\Newsletter\Controller\Backend\NewsletterController;
+use Maispace\MaiNewsletter\Controller\Backend\NewsletterController;
 
 return [
     'newsletter_list' => [

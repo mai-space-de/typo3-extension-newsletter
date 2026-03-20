@@ -1,4 +1,4 @@
-plugin.tx_newsletter_subscription {
+plugin.tx_mainewsletter_subscription {
     persistence {
         storagePid = 0
     }

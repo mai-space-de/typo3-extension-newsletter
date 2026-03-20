@@ -1,4 +1,4 @@
-CREATE TABLE tx_newsletter_domain_model_newsletter (
+CREATE TABLE tx_mainewsletter_domain_model_newsletter (
     uid int NOT NULL AUTO_INCREMENT,
     pid int DEFAULT '0' NOT NULL,
     tstamp int DEFAULT '0' NOT NULL,
@@ -16,7 +16,7 @@ CREATE TABLE tx_newsletter_domain_model_newsletter (
     KEY parent (pid)
 );
 
-CREATE TABLE tx_newsletter_domain_model_subscriber (
+CREATE TABLE tx_mainewsletter_domain_model_subscriber (
     uid int NOT NULL AUTO_INCREMENT,
     pid int DEFAULT '0' NOT NULL,
     tstamp int DEFAULT '0' NOT NULL,
@@ -35,7 +35,7 @@ CREATE TABLE tx_newsletter_domain_model_subscriber (
     KEY parent (pid)
 );
 
-CREATE TABLE tx_newsletter_domain_model_subscriberlist (
+CREATE TABLE tx_mainewsletter_domain_model_subscriberlist (
     uid int NOT NULL AUTO_INCREMENT,
     pid int DEFAULT '0' NOT NULL,
     tstamp int DEFAULT '0' NOT NULL,
@@ -51,7 +51,7 @@ CREATE TABLE tx_newsletter_domain_model_subscriberlist (
     KEY parent (pid)
 );
 
-CREATE TABLE tx_newsletter_subscriberlist_subscriber_mm (
+CREATE TABLE tx_mainewsletter_subscriberlist_subscriber_mm (
     uid_local int DEFAULT '0' NOT NULL,
     uid_foreign int DEFAULT '0' NOT NULL,
     sorting int DEFAULT '0' NOT NULL,
@@ -60,7 +60,7 @@ CREATE TABLE tx_newsletter_subscriberlist_subscriber_mm (
     KEY uid_foreign (uid_foreign)
 );
 
-CREATE TABLE tx_newsletter_newsletter_subscriberlist_mm (
+CREATE TABLE tx_mainewsletter_newsletter_subscriberlist_mm (
     uid_local int DEFAULT '0' NOT NULL,
     uid_foreign int DEFAULT '0' NOT NULL,
     sorting int DEFAULT '0' NOT NULL,

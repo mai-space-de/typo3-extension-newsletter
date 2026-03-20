@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 return [
     'ctrl' => [
-        'title' => 'LLL:EXT:newsletter/Resources/Private/Language/locallang_db.xlf:tx_newsletter_domain_model_subscriber',
+        'title' => 'LLL:EXT:mai_newsletter/Resources/Private/Language/locallang_db.xlf:tx_mainewsletter_domain_model_subscriber',
         'label' => 'email',
         'tstamp' => 'tstamp',
         'crdate' => 'crdate',
@@ -13,7 +13,7 @@ return [
             'disabled' => 'hidden',
         ],
         'searchFields' => 'email,interest_tags',
-        'iconfile' => 'EXT:newsletter/Resources/Public/Icons/Extension.svg',
+        'iconfile' => 'EXT:mai_newsletter/Resources/Public/Icons/Extension.svg',
     ],
     'types' => [
         '1' => [
@@ -31,7 +31,7 @@ return [
             ],
         ],
         'email' => [
-            'label' => 'LLL:EXT:newsletter/Resources/Private/Language/locallang_db.xlf:tx_newsletter_domain_model_subscriber.email',
+            'label' => 'LLL:EXT:mai_newsletter/Resources/Private/Language/locallang_db.xlf:tx_mainewsletter_domain_model_subscriber.email',
             'config' => [
                 'type' => 'input',
                 'size' => 50,
@@ -40,7 +40,7 @@ return [
             ],
         ],
         'fe_user_uid' => [
-            'label' => 'LLL:EXT:newsletter/Resources/Private/Language/locallang_db.xlf:tx_newsletter_domain_model_subscriber.feUserUid',
+            'label' => 'LLL:EXT:mai_newsletter/Resources/Private/Language/locallang_db.xlf:tx_mainewsletter_domain_model_subscriber.feUserUid',
             'config' => [
                 'type' => 'group',
                 'allowed' => 'fe_users',
@@ -49,7 +49,7 @@ return [
             ],
         ],
         'interest_tags' => [
-            'label' => 'LLL:EXT:newsletter/Resources/Private/Language/locallang_db.xlf:tx_newsletter_domain_model_subscriber.interestTags',
+            'label' => 'LLL:EXT:mai_newsletter/Resources/Private/Language/locallang_db.xlf:tx_mainewsletter_domain_model_subscriber.interestTags',
             'config' => [
                 'type' => 'input',
                 'size' => 50,
@@ -57,7 +57,7 @@ return [
             ],
         ],
         'token' => [
-            'label' => 'LLL:EXT:newsletter/Resources/Private/Language/locallang_db.xlf:tx_newsletter_domain_model_subscriber.token',
+            'label' => 'LLL:EXT:mai_newsletter/Resources/Private/Language/locallang_db.xlf:tx_mainewsletter_domain_model_subscriber.token',
             'config' => [
                 'type' => 'input',
                 'size' => 50,
@@ -65,21 +65,21 @@ return [
             ],
         ],
         'confirmed' => [
-            'label' => 'LLL:EXT:newsletter/Resources/Private/Language/locallang_db.xlf:tx_newsletter_domain_model_subscriber.confirmed',
+            'label' => 'LLL:EXT:mai_newsletter/Resources/Private/Language/locallang_db.xlf:tx_mainewsletter_domain_model_subscriber.confirmed',
             'config' => [
                 'type' => 'check',
                 'renderType' => 'checkboxToggle',
             ],
         ],
         'confirmed_at' => [
-            'label' => 'LLL:EXT:newsletter/Resources/Private/Language/locallang_db.xlf:tx_newsletter_domain_model_subscriber.confirmedAt',
+            'label' => 'LLL:EXT:mai_newsletter/Resources/Private/Language/locallang_db.xlf:tx_mainewsletter_domain_model_subscriber.confirmedAt',
             'config' => [
                 'type' => 'datetime',
                 'format' => 'datetime',
             ],
         ],
         'deleted_at' => [
-            'label' => 'LLL:EXT:newsletter/Resources/Private/Language/locallang_db.xlf:tx_newsletter_domain_model_subscriber.deletedAt',
+            'label' => 'LLL:EXT:mai_newsletter/Resources/Private/Language/locallang_db.xlf:tx_mainewsletter_domain_model_subscriber.deletedAt',
             'config' => [
                 'type' => 'datetime',
                 'format' => 'datetime',

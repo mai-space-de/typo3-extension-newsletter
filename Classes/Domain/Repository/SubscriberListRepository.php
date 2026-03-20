@@ -1,6 +1,6 @@
 <?php
 declare(strict_types=1);
-namespace MaiSpace\Newsletter\Domain\Repository;
+namespace Maispace\MaiNewsletter\Domain\Repository;
 
 use TYPO3\CMS\Extbase\Persistence\Repository;
 

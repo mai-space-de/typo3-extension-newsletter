@@ -1,11 +1,11 @@
 <?php
 declare(strict_types=1);
-namespace MaiSpace\Newsletter\Controller\Backend;
+namespace Maispace\MaiNewsletter\Controller\Backend;
 
-use MaiSpace\Newsletter\Domain\Model\Newsletter;
-use MaiSpace\Newsletter\Domain\Repository\NewsletterRepository;
-use MaiSpace\Newsletter\Domain\Repository\SubscriberListRepository;
-use MaiSpace\Newsletter\Service\NewsletterSendService;
+use Maispace\MaiNewsletter\Domain\Model\Newsletter;
+use Maispace\MaiNewsletter\Domain\Repository\NewsletterRepository;
+use Maispace\MaiNewsletter\Domain\Repository\SubscriberListRepository;
+use Maispace\MaiNewsletter\Service\NewsletterSendService;
 use Psr\Http\Message\ResponseInterface;
 use TYPO3\CMS\Backend\Template\ModuleTemplateFactory;
 use TYPO3\CMS\Extbase\Annotation\IgnoreValidation;

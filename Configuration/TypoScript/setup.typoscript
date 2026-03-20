@@ -1,22 +1,22 @@
-plugin.tx_newsletter_subscription {
+plugin.tx_mainewsletter_subscription {
     view {
-        templateRootPaths.0 = EXT:newsletter/Resources/Private/Templates/
-        partialRootPaths.0 = EXT:newsletter/Resources/Private/Partials/
-        layoutRootPaths.0 = EXT:newsletter/Resources/Private/Layouts/
+        templateRootPaths.0 = EXT:mai_newsletter/Resources/Private/Templates/
+        partialRootPaths.0 = EXT:mai_newsletter/Resources/Private/Partials/
+        layoutRootPaths.0 = EXT:mai_newsletter/Resources/Private/Layouts/
     }
     persistence {
-        storagePid = {$plugin.tx_newsletter_subscription.persistence.storagePid}
+        storagePid = {$plugin.tx_mainewsletter_subscription.persistence.storagePid}
     }
     settings {
-        subscriberListUid = {$plugin.tx_newsletter_subscription.settings.subscriberListUid}
-        confirmationPageUid = {$plugin.tx_newsletter_subscription.settings.confirmationPageUid}
+        subscriberListUid = {$plugin.tx_mainewsletter_subscription.settings.subscriberListUid}
+        confirmationPageUid = {$plugin.tx_mainewsletter_subscription.settings.confirmationPageUid}
     }
 }
 
-module.tx_newsletter {
+module.tx_mainewsletter {
     view {
-        templateRootPaths.0 = EXT:newsletter/Resources/Private/Templates/
-        partialRootPaths.0 = EXT:newsletter/Resources/Private/Partials/
-        layoutRootPaths.0 = EXT:newsletter/Resources/Private/Layouts/
+        templateRootPaths.0 = EXT:mai_newsletter/Resources/Private/Templates/
+        partialRootPaths.0 = EXT:mai_newsletter/Resources/Private/Partials/
+        layoutRootPaths.0 = EXT:mai_newsletter/Resources/Private/Layouts/
     }
 }

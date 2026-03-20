@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
-namespace MaiSpace\Newsletter\Service;
+namespace Maispace\MaiNewsletter\Service;
 
-use MaiSpace\Newsletter\Domain\Model\Newsletter;
-use MaiSpace\Newsletter\Domain\Model\Subscriber;
-use MaiSpace\Newsletter\Domain\Repository\NewsletterRepository;
+use Maispace\MaiNewsletter\Domain\Model\Newsletter;
+use Maispace\MaiNewsletter\Domain\Model\Subscriber;
+use Maispace\MaiNewsletter\Domain\Repository\NewsletterRepository;
 use Symfony\Component\Mime\Address;
 use TYPO3\CMS\Core\Mail\MailMessage;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
