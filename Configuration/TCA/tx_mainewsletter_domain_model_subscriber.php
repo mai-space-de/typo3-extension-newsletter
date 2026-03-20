@@ -7,7 +7,6 @@ return [
         'label' => 'email',
         'tstamp' => 'tstamp',
         'crdate' => 'crdate',
-        'cruser_id' => 'cruser_id',
         'delete' => 'deleted',
         'enablecolumns' => [
             'disabled' => 'hidden',
@@ -33,9 +32,7 @@ return [
         'email' => [
             'label' => 'LLL:EXT:mai_newsletter/Resources/Private/Language/locallang_db.xlf:tx_mainewsletter_domain_model_subscriber.email',
             'config' => [
-                'type' => 'input',
-                'size' => 50,
-                'eval' => 'trim,email',
+                'type' => 'email',
                 'required' => true,
             ],
         ],

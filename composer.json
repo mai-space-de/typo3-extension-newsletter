@@ -1,23 +1,27 @@
 {
-    "name": "maispace/mai-newsletter",
-    "description": "Newsletter management extension for TYPO3",
-    "type": "typo3-cms-extension",
-    "license": "GPL-2.0-or-later",
-    "require": {
-        "typo3/cms-core": "^12.4",
-        "typo3/cms-extbase": "^12.4",
-        "typo3/cms-fluid": "^12.4",
-        "typo3/cms-backend": "^12.4",
-        "typo3/cms-frontend": "^12.4"
-    },
-    "autoload": {
-        "psr-4": {
-            "Maispace\\MaiNewsletter\\": "Classes/"
-        }
-    },
-    "extra": {
-        "typo3/cms": {
-            "extension-key": "mai_newsletter"
-        }
+  "name": "maispace/mai-newsletter",
+  "description": "Newsletter management extension for TYPO3",
+  "type": "typo3-cms-extension",
+  "license": "GPL-2.0-or-later",
+  "require": {
+    "php": "^8.2",
+    "typo3/cms-core": "^13.4",
+    "typo3/cms-extbase": "^13.4",
+    "typo3/cms-fluid": "^13.4",
+    "typo3/cms-backend": "^13.4",
+    "typo3/cms-frontend": "^13.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "Maispace\\MaiNewsletter\\": "Classes/"
     }
+  },
+  "extra": {
+    "typo3/cms": {
+      "extension-key": "mai_newsletter"
+    },
+    "branch-alias": {
+      "dev-main": "13.0.x-dev"
+    }
+  }
 }

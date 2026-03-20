@@ -21,9 +21,9 @@
             <f:form action="processSubscribe" controller="Subscription" extensionName="Newsletter" pluginName="Subscription" method="post">
                 <div class="form-group">
                     <label for="email"><f:translate key="LLL:EXT:newsletter/Resources/Private/Language/locallang.xlf:subscription.subscribe.email" /></label>
-                    <input type="email" id="email" name="tx_newsletter_subscription[email]" class="form-control" required="required" placeholder="your@email.com" />
+                    <input type="email" id="email" name="tx_mainewsletter_subscription[email]" class="form-control" required="required" placeholder="your@email.com" />
                 </div>
-                <input type="hidden" name="tx_newsletter_subscription[listUid]" value="{settings.subscriberListUid}" />
+                <input type="hidden" name="tx_mainewsletter_subscription[listUid]" value="{settings.subscriberListUid}" />
                 <button type="submit" class="btn">
                     <f:translate key="LLL:EXT:newsletter/Resources/Private/Language/locallang.xlf:subscription.subscribe.submit" />
                 </button>

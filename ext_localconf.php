@@ -14,16 +14,4 @@ defined('TYPO3') or die();
         [SubscriptionController::class => 'subscribe,processSubscribe,confirm,unsubscribe'],
         ExtensionUtility::PLUGIN_TYPE_CONTENT_ELEMENT
     );
-
-    // Register TypoScript
-    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig(
-        '@import "EXT:mai_newsletter/Configuration/TypoScript/setup.typoscript"'
-    );
-
-    // FlexForm
-    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPiFlexFormValue(
-        '*',
-        'FILE:EXT:mai_newsletter/Configuration/FlexForms/SubscriptionPlugin.xml',
-        'mainewsletter_subscription'
-    );
 })();

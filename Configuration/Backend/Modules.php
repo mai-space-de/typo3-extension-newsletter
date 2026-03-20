@@ -11,11 +11,37 @@ return [
         'workspaces' => 'live',
         'iconIdentifier' => 'ext-mai-newsletter-module',
         'path' => '/module/mai-newsletter',
-        'labels' => 'LLL:EXT:mai_newsletter/Resources/Private/Language/locallang.xlf',
-        'extensionName' => 'MaiNewsletter',
-        'controllerActions' => [
-            NewsletterController::class => [
-                'list', 'new', 'create', 'edit', 'update', 'delete', 'preview', 'send', 'statistics', 'archive',
+        'labels' => 'LLL:EXT:mai_newsletter/Resources/Private/Language/locallang_mod.xlf',
+        'routes' => [
+            '_default' => [
+                'target' => NewsletterController::class . '::listAction',
+            ],
+            'new' => [
+                'target' => NewsletterController::class . '::newAction',
+            ],
+            'create' => [
+                'target' => NewsletterController::class . '::createAction',
+            ],
+            'edit' => [
+                'target' => NewsletterController::class . '::editAction',
+            ],
+            'update' => [
+                'target' => NewsletterController::class . '::updateAction',
+            ],
+            'delete' => [
+                'target' => NewsletterController::class . '::deleteAction',
+            ],
+            'preview' => [
+                'target' => NewsletterController::class . '::previewAction',
+            ],
+            'send' => [
+                'target' => NewsletterController::class . '::sendAction',
+            ],
+            'statistics' => [
+                'target' => NewsletterController::class . '::statisticsAction',
+            ],
+            'archive' => [
+                'target' => NewsletterController::class . '::archiveAction',
             ],
         ],
     ],
