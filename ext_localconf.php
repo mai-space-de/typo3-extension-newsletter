@@ -10,8 +10,8 @@ defined('TYPO3') or die();
     ExtensionUtility::configurePlugin(
         'Newsletter',
         'Subscription',
-        [SubscriptionController::class => 'subscribe,confirm,unsubscribe'],
-        [SubscriptionController::class => 'subscribe,confirm,unsubscribe'],
+        [SubscriptionController::class => 'subscribe,processSubscribe,confirm,unsubscribe'],
+        [SubscriptionController::class => 'subscribe,processSubscribe,confirm,unsubscribe'],
         ExtensionUtility::PLUGIN_TYPE_CONTENT_ELEMENT
     );
 
