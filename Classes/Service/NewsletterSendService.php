@@ -7,6 +7,7 @@ use MaiSpace\Newsletter\Domain\Model\Subscriber;
 use MaiSpace\Newsletter\Domain\Repository\NewsletterRepository;
 use Symfony\Component\Mime\Address;
 use TYPO3\CMS\Core\Mail\MailMessage;
+use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Extbase\Persistence\PersistenceManagerInterface;
 
 class NewsletterSendService
@@ -16,7 +17,6 @@ class NewsletterSendService
     public function __construct(
         private readonly NewsletterRepository $newsletterRepository,
         private readonly PersistenceManagerInterface $persistenceManager,
-        private readonly MailMessage $mailMessage,
     ) {}
 
     public function sendNewsletter(Newsletter $newsletter): array
@@ -88,7 +88,7 @@ class NewsletterSendService
 
     private function sendToSubscriber(Newsletter $newsletter, Subscriber $subscriber): void
     {
-        $mail = clone $this->mailMessage;
+        $mail = GeneralUtility::makeInstance(MailMessage::class);
         $mail->to(new Address($subscriber->getEmail()))
             ->subject($newsletter->getSubject())
             ->html($newsletter->getContent());

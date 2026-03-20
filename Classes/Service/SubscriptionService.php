@@ -10,6 +10,7 @@ use MaiSpace\Newsletter\Event\UnsubscribedEvent;
 use Psr\EventDispatcher\EventDispatcherInterface;
 use Symfony\Component\Mime\Address;
 use TYPO3\CMS\Core\Mail\MailMessage;
+use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Extbase\Persistence\PersistenceManagerInterface;
 
 class SubscriptionService
@@ -18,7 +19,6 @@ class SubscriptionService
         private readonly SubscriberRepository $subscriberRepository,
         private readonly PersistenceManagerInterface $persistenceManager,
         private readonly EventDispatcherInterface $eventDispatcher,
-        private readonly MailMessage $mailMessage,
     ) {}
 
     public function subscribe(string $email, SubscriberList $list, string $interestTags = ''): Subscriber
@@ -40,7 +40,7 @@ class SubscriptionService
 
     public function sendConfirmationEmail(Subscriber $subscriber, string $confirmUrl): void
     {
-        $mail = clone $this->mailMessage;
+        $mail = GeneralUtility::makeInstance(MailMessage::class);
         $mail->to(new Address($subscriber->getEmail()))
             ->subject('Please confirm your subscription')
             ->html(

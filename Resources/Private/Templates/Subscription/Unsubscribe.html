@@ -20,7 +20,7 @@
                     <label for="token"><f:translate key="LLL:EXT:newsletter/Resources/Private/Language/locallang.xlf:subscription.unsubscribe.token" /></label>
                     <input type="text" id="token" name="tx_newsletter_subscription[token]" class="form-control" value="{token -> f:format.htmlspecialchars()}" required="required" />
                 </div>
-                <button type="submit" class="btn btn-danger">Unsubscribe</button>
+                <button type="submit" class="btn btn-danger"><f:translate key="LLL:EXT:newsletter/Resources/Private/Language/locallang.xlf:subscription.unsubscribe.submit" /></button>
             </f:form>
         </f:else>
     </f:if>

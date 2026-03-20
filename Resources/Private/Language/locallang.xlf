@@ -57,6 +57,9 @@
             <trans-unit id="subscription.unsubscribe.token">
                 <source>Unsubscribe Token</source>
             </trans-unit>
+            <trans-unit id="subscription.unsubscribe.submit">
+                <source>Unsubscribe</source>
+            </trans-unit>
             <trans-unit id="backend.newsletter.list.headline">
                 <source>Newsletter Overview</source>
             </trans-unit>
