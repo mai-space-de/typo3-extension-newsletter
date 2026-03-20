@@ -1,0 +1,22 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      xmlns:be="http://typo3.org/ns/TYPO3/CMS/Backend/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+<f:section name="Content">
+<div class="module-body">
+    <h1>Preview: {newsletter.subject}</h1>
+
+    <div class="newsletter-preview" style="border: 1px solid #ddd; padding: 20px; background: #fff;">
+        <h2>{newsletter.subject}</h2>
+        <f:format.raw>{newsletter.content}</f:format.raw>
+    </div>
+
+    <div style="margin-top: 20px;">
+        <f:link.action action="edit" arguments="{newsletter: newsletter}" class="btn btn-primary">Edit</f:link.action>
+        <f:if condition="{newsletter.status} != 2">
+            <f:link.action action="send" arguments="{newsletter: newsletter}" class="btn btn-success" additionalAttributes="{data-confirm: 'Send this newsletter now?'}">Send Now</f:link.action>
+        </f:if>
+        <f:link.action action="list" class="btn btn-secondary">Back to List</f:link.action>
+    </div>
+</div>
+</f:section>
+</html>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3DataStructure>
+    <meta>
+        <langDisable>1</langDisable>
+    </meta>
+    <sheets>
+        <sDEF>
+            <ROOT>
+                <TCEforms>
+                    <sheetTitle>LLL:EXT:newsletter/Resources/Private/Language/locallang.xlf:flexform.tab.general</sheetTitle>
+                </TCEforms>
+                <type>array</type>
+                <el>
+                    <settings.subscriberListUid>
+                        <TCEforms>
+                            <label>LLL:EXT:newsletter/Resources/Private/Language/locallang.xlf:flexform.settings.subscriberListUid</label>
+                            <config>
+                                <type>select</type>
+                                <renderType>selectSingle</renderType>
+                                <foreign_table>tx_newsletter_domain_model_subscriberlist</foreign_table>
+                                <items>
+                                    <numIndex index="0">
+                                        <numIndex index="0">LLL:EXT:newsletter/Resources/Private/Language/locallang.xlf:flexform.pleaseSelect</numIndex>
+                                        <numIndex index="1">0</numIndex>
+                                    </numIndex>
+                                </items>
+                            </config>
+                        </TCEforms>
+                    </settings.subscriberListUid>
+                    <settings.confirmationPageUid>
+                        <TCEforms>
+                            <label>LLL:EXT:newsletter/Resources/Private/Language/locallang.xlf:flexform.settings.confirmationPageUid</label>
+                            <config>
+                                <type>group</type>
+                                <allowed>pages</allowed>
+                                <size>1</size>
+                                <maxitems>1</maxitems>
+                            </config>
+                        </TCEforms>
+                    </settings.confirmationPageUid>
+                </el>
+            </ROOT>
+        </sDEF>
+    </sheets>
+</T3DataStructure>

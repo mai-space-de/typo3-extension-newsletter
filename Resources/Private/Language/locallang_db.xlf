@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="messages" date="2024-01-01T00:00:00Z" product-name="newsletter">
+        <header/>
+        <body>
+            <trans-unit id="tx_newsletter_domain_model_newsletter">
+                <source>Newsletter</source>
+            </trans-unit>
+            <trans-unit id="tx_newsletter_domain_model_newsletter.subject">
+                <source>Subject</source>
+            </trans-unit>
+            <trans-unit id="tx_newsletter_domain_model_newsletter.content">
+                <source>Content</source>
+            </trans-unit>
+            <trans-unit id="tx_newsletter_domain_model_newsletter.status">
+                <source>Status</source>
+            </trans-unit>
+            <trans-unit id="tx_newsletter_domain_model_newsletter.status.draft">
+                <source>Draft</source>
+            </trans-unit>
+            <trans-unit id="tx_newsletter_domain_model_newsletter.status.scheduled">
+                <source>Scheduled</source>
+            </trans-unit>
+            <trans-unit id="tx_newsletter_domain_model_newsletter.status.sent">
+                <source>Sent</source>
+            </trans-unit>
+            <trans-unit id="tx_newsletter_domain_model_newsletter.scheduledAt">
+                <source>Scheduled At</source>
+            </trans-unit>
+            <trans-unit id="tx_newsletter_domain_model_newsletter.targetLists">
+                <source>Target Lists</source>
+            </trans-unit>
+            <trans-unit id="tx_newsletter_domain_model_newsletter.statistics">
+                <source>Statistics</source>
+            </trans-unit>
+            <trans-unit id="tx_newsletter_domain_model_subscriber">
+                <source>Subscriber</source>
+            </trans-unit>
+            <trans-unit id="tx_newsletter_domain_model_subscriber.email">
+                <source>Email</source>
+            </trans-unit>
+            <trans-unit id="tx_newsletter_domain_model_subscriber.feUserUid">
+                <source>Frontend User</source>
+            </trans-unit>
+            <trans-unit id="tx_newsletter_domain_model_subscriber.interestTags">
+                <source>Interest Tags</source>
+            </trans-unit>
+            <trans-unit id="tx_newsletter_domain_model_subscriber.token">
+                <source>Token</source>
+            </trans-unit>
+            <trans-unit id="tx_newsletter_domain_model_subscriber.confirmed">
+                <source>Confirmed</source>
+            </trans-unit>
+            <trans-unit id="tx_newsletter_domain_model_subscriber.confirmedAt">
+                <source>Confirmed At</source>
+            </trans-unit>
+            <trans-unit id="tx_newsletter_domain_model_subscriber.deletedAt">
+                <source>Deleted At</source>
+            </trans-unit>
+            <trans-unit id="tx_newsletter_domain_model_subscriberlist">
+                <source>Subscriber List</source>
+            </trans-unit>
+            <trans-unit id="tx_newsletter_domain_model_subscriberlist.name">
+                <source>Name</source>
+            </trans-unit>
+            <trans-unit id="tx_newsletter_domain_model_subscriberlist.description">
+                <source>Description</source>
+            </trans-unit>
+            <trans-unit id="tx_newsletter_domain_model_subscriberlist.interestTag">
+                <source>Interest Tag</source>
+            </trans-unit>
+            <trans-unit id="tx_newsletter_domain_model_subscriberlist.subscribers">
+                <source>Subscribers</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
