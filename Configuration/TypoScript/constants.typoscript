@@ -1,9 +1,0 @@
-plugin.tx_mainewsletter_subscription {
-    persistence {
-        storagePid = 0
-    }
-    settings {
-        subscriberListUid = 0
-        confirmationPageUid = 0
-    }
-}
