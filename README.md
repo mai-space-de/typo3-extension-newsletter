@@ -5,7 +5,7 @@
 
 Newsletter management extension. **Owns the canonical subscriber record** — all opt-in/opt-out operations across the project write to this extension's subscriber table. Email dispatch goes through `mai_mail`.
 
-**Requires:** TYPO3 13.4 LTS / 14.0 · PHP 8.2+
+**Requires:** TYPO3 13.4 LTS / 14.1 · PHP 8.2+
 
 ---
 
