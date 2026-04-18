@@ -15,18 +15,17 @@ $lang = Helper::localLangHelperFactory('mai_newsletter', 'Default/locallang_tca.
 return (new Table($lang('table.tx_mainewsletter_campaign')))
     ->setDefaultConfig()
     ->setLabel('title')
-    ->setSearchFields('title, subject')
     ->setIconFile('EXT:mai_newsletter/Resources/Public/Icons/tx_mainewsletter_campaign.svg')
     ->setDefaultSorting('ORDER BY crdate DESC')
     ->addColumn(
         'title',
         $lang('tx_mainewsletter_campaign.title'),
-        (new InputConfig())->setSize(50)->setMax(255)->setEval('trim,required')
+        (new InputConfig())->setSize(50)->setMax(255)->setEval('trim')->setRequired()
     )
     ->addColumn(
         'subject',
         $lang('tx_mainewsletter_campaign.subject'),
-        (new InputConfig())->setSize(50)->setMax(255)->setEval('trim,required')
+        (new InputConfig())->setSize(50)->setMax(255)->setEval('trim')->setRequired()
     )
     ->addColumn(
         'body',

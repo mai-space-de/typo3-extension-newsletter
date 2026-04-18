@@ -14,14 +14,13 @@ $lang = Helper::localLangHelperFactory('mai_newsletter', 'Default/locallang_tca.
 return (new Table($lang('table.tx_mainewsletter_subscriber')))
     ->setDefaultConfig()
     ->setLabel('email')
-    ->setSearchFields('email')
     ->setIconFile('EXT:mai_newsletter/Resources/Public/Icons/tx_mainewsletter_subscriber.svg')
     ->setDefaultSorting('ORDER BY crdate DESC')
     ->recordsAreOnlyAllowedInRoot()
     ->addColumn(
         'email',
         $lang('tx_mainewsletter_subscriber.email'),
-        (new EmailConfig())->setEval('required,unique')
+        (new EmailConfig())->setRequired()->setEval('unique')
     )
     ->addColumn(
         'status',
