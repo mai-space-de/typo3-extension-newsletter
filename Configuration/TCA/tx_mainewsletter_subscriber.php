@@ -2,6 +2,10 @@
 
 declare(strict_types=1);
 
+use Maispace\MaiBase\TableConfigurationArray\FieldConfig\DatetimeConfig;
+use Maispace\MaiBase\TableConfigurationArray\FieldConfig\EmailConfig;
+use Maispace\MaiBase\TableConfigurationArray\FieldConfig\InputConfig;
+use Maispace\MaiBase\TableConfigurationArray\FieldConfig\SelectSingleConfig;
 use Maispace\MaiBase\TableConfigurationArray\Helper;
 use Maispace\MaiBase\TableConfigurationArray\Table;
 
@@ -17,41 +21,38 @@ return (new Table($lang('table.tx_mainewsletter_subscriber')))
     ->addColumn(
         'email',
         $lang('tx_mainewsletter_subscriber.email'),
-        ['type' => 'email', 'eval' => 'required,unique']
+        (new EmailConfig())->setEval('required,unique')
     )
     ->addColumn(
         'status',
         $lang('tx_mainewsletter_subscriber.status'),
-        [
-            'type' => 'select',
-            'renderType' => 'selectSingle',
-            'items' => [
+        (new SelectSingleConfig())
+            ->setItems([
                 ['label' => $lang('tx_mainewsletter_subscriber.status.pending'), 'value' => 'pending'],
                 ['label' => $lang('tx_mainewsletter_subscriber.status.subscribed'), 'value' => 'subscribed'],
                 ['label' => $lang('tx_mainewsletter_subscriber.status.unsubscribed'), 'value' => 'unsubscribed'],
-            ],
-            'default' => 'pending',
-        ]
+            ])
+            ->setDefault('pending')
     )
     ->addColumn(
         'token',
         $lang('tx_mainewsletter_subscriber.token'),
-        ['type' => 'input', 'size' => 50, 'max' => 255, 'readOnly' => true]
+        (new InputConfig())->setSize(50)->setMax(255)->setReadOnly()
     )
     ->addColumn(
         'confirmed_at',
         $lang('tx_mainewsletter_subscriber.confirmed_at'),
-        ['type' => 'datetime', 'format' => 'datetime', 'readOnly' => true]
+        (new DatetimeConfig())->setFormat('datetime')->setReadOnly()
     )
     ->addColumn(
         'unsubscribed_at',
         $lang('tx_mainewsletter_subscriber.unsubscribed_at'),
-        ['type' => 'datetime', 'format' => 'datetime', 'readOnly' => true]
+        (new DatetimeConfig())->setFormat('datetime')->setReadOnly()
     )
     ->addColumn(
         'site',
         $lang('tx_mainewsletter_subscriber.site'),
-        ['type' => 'input', 'size' => 30, 'max' => 100, 'readOnly' => true]
+        (new InputConfig())->setSize(30)->setMax(100)->setReadOnly()
     )
     ->addPalette(
         'dates',

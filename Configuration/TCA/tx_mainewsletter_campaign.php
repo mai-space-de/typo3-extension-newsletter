@@ -2,6 +2,11 @@
 
 declare(strict_types=1);
 
+use Maispace\MaiBase\TableConfigurationArray\FieldConfig\DatetimeConfig;
+use Maispace\MaiBase\TableConfigurationArray\FieldConfig\InputConfig;
+use Maispace\MaiBase\TableConfigurationArray\FieldConfig\NumberConfig;
+use Maispace\MaiBase\TableConfigurationArray\FieldConfig\SelectSingleConfig;
+use Maispace\MaiBase\TableConfigurationArray\FieldConfig\TextConfig;
 use Maispace\MaiBase\TableConfigurationArray\Helper;
 use Maispace\MaiBase\TableConfigurationArray\Table;
 
@@ -16,52 +21,43 @@ return (new Table($lang('table.tx_mainewsletter_campaign')))
     ->addColumn(
         'title',
         $lang('tx_mainewsletter_campaign.title'),
-        ['type' => 'input', 'size' => 50, 'max' => 255, 'eval' => 'trim,required']
+        (new InputConfig())->setSize(50)->setMax(255)->setEval('trim,required')
     )
     ->addColumn(
         'subject',
         $lang('tx_mainewsletter_campaign.subject'),
-        ['type' => 'input', 'size' => 50, 'max' => 255, 'eval' => 'trim,required']
+        (new InputConfig())->setSize(50)->setMax(255)->setEval('trim,required')
     )
     ->addColumn(
         'body',
         $lang('tx_mainewsletter_campaign.body'),
-        [
-            'type' => 'text',
-            'rows' => 20,
-            'cols' => 50,
-            'enableRichtext' => true,
-            'richtextConfiguration' => 'default',
-        ]
+        (new TextConfig())->setRows(20)->setCols(50)->enableRte()->setRichtextConfiguration('default')
     )
     ->addColumn(
         'status',
         $lang('tx_mainewsletter_campaign.status'),
-        [
-            'type' => 'select',
-            'renderType' => 'selectSingle',
-            'items' => [
+        (new SelectSingleConfig())
+            ->setItems([
                 ['label' => $lang('tx_mainewsletter_campaign.status.draft'), 'value' => 'draft'],
                 ['label' => $lang('tx_mainewsletter_campaign.status.scheduled'), 'value' => 'scheduled'],
                 ['label' => $lang('tx_mainewsletter_campaign.status.sent'), 'value' => 'sent'],
-            ],
-            'default' => 'draft',
-        ]
+            ])
+            ->setDefault('draft')
     )
     ->addColumn(
         'scheduled_at',
         $lang('tx_mainewsletter_campaign.scheduled_at'),
-        ['type' => 'datetime', 'format' => 'datetime']
+        (new DatetimeConfig())->setFormat('datetime')
     )
     ->addColumn(
         'sent_at',
         $lang('tx_mainewsletter_campaign.sent_at'),
-        ['type' => 'datetime', 'format' => 'datetime', 'readOnly' => true]
+        (new DatetimeConfig())->setFormat('datetime')->setReadOnly()
     )
     ->addColumn(
         'recipient_count',
         $lang('tx_mainewsletter_campaign.recipient_count'),
-        ['type' => 'number', 'format' => 'integer', 'default' => 0, 'readOnly' => true]
+        (new NumberConfig())->setFormat('integer')->setDefault(0)->setReadOnly()
     )
     ->addPalette(
         'dispatch',
