@@ -1,0 +1,15 @@
+plugin.tx_mainewsletter_newsletter {
+    view {
+        templateRootPath =
+        partialRootPath =
+        layoutRootPath =
+    }
+    persistence {
+        storagePid =
+    }
+    settings {
+        subscriberStoragePid =
+        confirmPid =
+        unsubscribePid =
+    }
+}

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="messages" date="2026-04-19T00:00:00Z" product-name="mai_newsletter">
+        <header/>
+        <body>
+            <trans-unit id="table.tx_mainewsletter_subscriber">
+                <source>Newsletter Subscriber</source>
+            </trans-unit>
+            <trans-unit id="tx_mainewsletter_subscriber.email">
+                <source>E-Mail</source>
+            </trans-unit>
+            <trans-unit id="tx_mainewsletter_subscriber.status">
+                <source>Status</source>
+            </trans-unit>
+            <trans-unit id="tx_mainewsletter_subscriber.status.pending">
+                <source>Pending</source>
+            </trans-unit>
+            <trans-unit id="tx_mainewsletter_subscriber.status.subscribed">
+                <source>Subscribed</source>
+            </trans-unit>
+            <trans-unit id="tx_mainewsletter_subscriber.status.unsubscribed">
+                <source>Unsubscribed</source>
+            </trans-unit>
+            <trans-unit id="tx_mainewsletter_subscriber.token">
+                <source>Token</source>
+            </trans-unit>
+            <trans-unit id="tx_mainewsletter_subscriber.confirmed_at">
+                <source>Confirmed At</source>
+            </trans-unit>
+            <trans-unit id="tx_mainewsletter_subscriber.unsubscribed_at">
+                <source>Unsubscribed At</source>
+            </trans-unit>
+            <trans-unit id="tx_mainewsletter_subscriber.site">
+                <source>Site</source>
+            </trans-unit>
+            <trans-unit id="palette.dates">
+                <source>Dates</source>
+            </trans-unit>
+            <trans-unit id="table.tx_mainewsletter_campaign">
+                <source>Newsletter Campaign</source>
+            </trans-unit>
+            <trans-unit id="tx_mainewsletter_campaign.title">
+                <source>Title</source>
+            </trans-unit>
+            <trans-unit id="tx_mainewsletter_campaign.subject">
+                <source>Subject</source>
+            </trans-unit>
+            <trans-unit id="tx_mainewsletter_campaign.body">
+                <source>Body</source>
+            </trans-unit>
+            <trans-unit id="tx_mainewsletter_campaign.status">
+                <source>Status</source>
+            </trans-unit>
+            <trans-unit id="tx_mainewsletter_campaign.status.draft">
+                <source>Draft</source>
+            </trans-unit>
+            <trans-unit id="tx_mainewsletter_campaign.status.scheduled">
+                <source>Scheduled</source>
+            </trans-unit>
+            <trans-unit id="tx_mainewsletter_campaign.status.sent">
+                <source>Sent</source>
+            </trans-unit>
+            <trans-unit id="tx_mainewsletter_campaign.scheduled_at">
+                <source>Scheduled At</source>
+            </trans-unit>
+            <trans-unit id="tx_mainewsletter_campaign.sent_at">
+                <source>Sent At</source>
+            </trans-unit>
+            <trans-unit id="tx_mainewsletter_campaign.recipient_count">
+                <source>Recipients</source>
+            </trans-unit>
+            <trans-unit id="palette.dispatch">
+                <source>Dispatch</source>
+            </trans-unit>
+            <trans-unit id="palette.language">
+                <source>Language</source>
+            </trans-unit>
+            <trans-unit id="palette.hidden">
+                <source>Visibility</source>
+            </trans-unit>
+            <trans-unit id="palette.access">
+                <source>Access</source>
+            </trans-unit>
+            <trans-unit id="tab.dispatch">
+                <source>Dispatch</source>
+            </trans-unit>
+            <trans-unit id="tab.language">
+                <source>Language</source>
+            </trans-unit>
+            <trans-unit id="tab.access">
+                <source>Access</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

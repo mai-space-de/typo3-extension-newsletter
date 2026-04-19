@@ -6,4 +6,8 @@ services:
 
   Maispace\MaiNewsletter\:
     resource: '../Classes/*'
-    exclude: '../Classes/Domain/Model/*'
+    exclude:
+      - '../Classes/Domain/Model/*'
+
+  Maispace\MaiNewsletter\Service\SubscriberService:
+    public: true

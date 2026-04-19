@@ -1,0 +1,24 @@
+plugin.tx_mainewsletter_newsletter {
+    view {
+        templateRootPaths {
+            0 = EXT:mai_newsletter/Resources/Private/Templates/
+            10 = {$plugin.tx_mainewsletter_newsletter.view.templateRootPath}
+        }
+        partialRootPaths {
+            0 = EXT:mai_newsletter/Resources/Private/Partials/
+            10 = {$plugin.tx_mainewsletter_newsletter.view.partialRootPath}
+        }
+        layoutRootPaths {
+            0 = EXT:mai_newsletter/Resources/Private/Layouts/
+            10 = {$plugin.tx_mainewsletter_newsletter.view.layoutRootPath}
+        }
+    }
+    persistence {
+        storagePid = {$plugin.tx_mainewsletter_newsletter.persistence.storagePid}
+    }
+    settings {
+        subscriberStoragePid = {$plugin.tx_mainewsletter_newsletter.settings.subscriberStoragePid}
+        confirmPid = {$plugin.tx_mainewsletter_newsletter.settings.confirmPid}
+        unsubscribePid = {$plugin.tx_mainewsletter_newsletter.settings.unsubscribePid}
+    }
+}

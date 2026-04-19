@@ -10,8 +10,12 @@ $EM_CONF[$_EXTKEY] = [
     'constraints' => [
         'depends' => [
             'typo3' => '13.4.0-14.99.99',
+            'mai_base' => '13.0.0-14.99.99',
+            'mai_mail' => '13.0.0-14.99.99',
         ],
         'conflicts' => [],
-        'suggests' => [],
+        'suggests' => [
+            'mai_account' => 'Frontend opt-in UI on the user profile page',
+        ],
     ],
 ];

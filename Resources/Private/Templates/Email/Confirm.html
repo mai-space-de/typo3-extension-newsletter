@@ -1,0 +1,14 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+<body>
+    <p><f:translate key="email.confirm.greeting" extensionName="mai_newsletter" default="Hello,"/></p>
+    <p><f:translate key="email.confirm.body" extensionName="mai_newsletter" default="Please confirm your newsletter subscription by clicking the link below:"/></p>
+    <p><a href="{confirmUrl}">{confirmUrl}</a></p>
+    <p><f:translate key="email.confirm.disclaimer" extensionName="mai_newsletter" default="If you did not request this subscription you can ignore this email."/></p>
+    <hr/>
+    <p style="font-size: 0.85em; color: #666;">
+        <f:translate key="email.confirm.unsubscribe" extensionName="mai_newsletter" default="Unsubscribe"/>:
+        <a href="{unsubscribeUrl}">{unsubscribeUrl}</a>
+    </p>
+</body>
+</html>

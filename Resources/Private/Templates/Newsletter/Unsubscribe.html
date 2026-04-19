@@ -1,0 +1,18 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+<f:layout name="Default"/>
+<f:section name="main">
+    <div class="mai-newsletter-unsubscribe">
+        <f:if condition="{success}">
+            <f:then>
+                <h2><f:translate key="unsubscribe.success.title" extensionName="mai_newsletter" default="Unsubscribed"/></h2>
+                <p><f:translate key="unsubscribe.success.message" extensionName="mai_newsletter" default="You have been removed from the newsletter list."/></p>
+            </f:then>
+            <f:else>
+                <h2><f:translate key="unsubscribe.fail.title" extensionName="mai_newsletter" default="Unsubscribe failed"/></h2>
+                <p><f:translate key="unsubscribe.fail.message" extensionName="mai_newsletter" default="The unsubscribe link is invalid or has already been used."/></p>
+            </f:else>
+        </f:if>
+    </div>
+</f:section>
+</html>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="messages" date="2026-04-19T00:00:00Z" product-name="mai_newsletter">
+        <header/>
+        <body>
+            <trans-unit id="subscribe.title">
+                <source>Subscribe to our newsletter</source>
+            </trans-unit>
+            <trans-unit id="subscribe.email">
+                <source>E-Mail</source>
+            </trans-unit>
+            <trans-unit id="subscribe.submit">
+                <source>Subscribe</source>
+            </trans-unit>
+            <trans-unit id="subscribe.invalidEmail">
+                <source>Please enter a valid email address.</source>
+            </trans-unit>
+            <trans-unit id="subscribe.alreadySubscribed">
+                <source>This email is already subscribed.</source>
+            </trans-unit>
+            <trans-unit id="subscribe.confirmationSent">
+                <source>Please check your inbox to confirm your subscription.</source>
+            </trans-unit>
+            <trans-unit id="confirm.success.title">
+                <source>Subscription confirmed</source>
+            </trans-unit>
+            <trans-unit id="confirm.success.message">
+                <source>Thanks! Your subscription is now active.</source>
+            </trans-unit>
+            <trans-unit id="confirm.fail.title">
+                <source>Confirmation failed</source>
+            </trans-unit>
+            <trans-unit id="confirm.fail.message">
+                <source>The confirmation link is invalid or has already been used.</source>
+            </trans-unit>
+            <trans-unit id="unsubscribe.success.title">
+                <source>Unsubscribed</source>
+            </trans-unit>
+            <trans-unit id="unsubscribe.success.message">
+                <source>You have been removed from the newsletter list.</source>
+            </trans-unit>
+            <trans-unit id="unsubscribe.fail.title">
+                <source>Unsubscribe failed</source>
+            </trans-unit>
+            <trans-unit id="unsubscribe.fail.message">
+                <source>The unsubscribe link is invalid or has already been used.</source>
+            </trans-unit>
+            <trans-unit id="email.confirm.subject">
+                <source>Please confirm your newsletter subscription</source>
+            </trans-unit>
+            <trans-unit id="email.confirm.greeting">
+                <source>Hello,</source>
+            </trans-unit>
+            <trans-unit id="email.confirm.body">
+                <source>Please confirm your newsletter subscription by clicking the link below:</source>
+            </trans-unit>
+            <trans-unit id="email.confirm.disclaimer">
+                <source>If you did not request this subscription you can ignore this email.</source>
+            </trans-unit>
+            <trans-unit id="email.confirm.unsubscribe">
+                <source>Unsubscribe</source>
+            </trans-unit>
+            <trans-unit id="plugin.newsletter.title">
+                <source>Newsletter: Subscribe</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
