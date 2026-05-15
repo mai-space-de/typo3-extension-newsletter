@@ -1,7 +1,3 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <path fill="currentColor" d="M48 16H10c-1.1 0-2 .9-2 2v28c0 1.1.9 2 2 2h38c1.1 0 2-.9 2-2V18c0-1.1-.9-2-2-2zm-38 4h38v1.5L29 35 10 21.5V20z"/>
-  <g opacity=".4"><path fill="currentColor" d="M10 21.5L29 35l19-13.5V44H10V21.5z"/></g>
-  <rect fill="var(--icon-color-accent, #ff8700)" x="40" y="14" width="16" height="4" rx="1"/>
-  <rect fill="var(--icon-color-accent, #ff8700)" x="40" y="22" width="16" height="4" rx="1"/>
-  <rect fill="var(--icon-color-accent, #ff8700)" x="40" y="30" width="16" height="4" rx="1"/>
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 0H64V64H0V0Z" fill="#FF8700"/>
 </svg>

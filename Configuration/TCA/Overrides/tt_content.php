@@ -10,5 +10,5 @@ ExtensionUtility::registerPlugin(
     'MaiNewsletter',
     'Newsletter',
     'LLL:EXT:mai_newsletter/Resources/Private/Language/Default/locallang.xlf:plugin.newsletter.title',
-    'ext-maispace-mai_newsletter',
+    'mai-content',
 );
