@@ -22,8 +22,7 @@ class NewsletterController extends AbstractActionController
         private readonly ConfirmationMailer $confirmationMailer,
         private readonly SiteFinder $siteFinder,
         private readonly Context $context,
-    ) {
-    }
+    ) {}
 
     public function subscribeFormAction(): ResponseInterface
     {
@@ -39,9 +38,9 @@ class NewsletterController extends AbstractActionController
             return $this->redirect('subscribeForm');
         }
 
-        $storagePid = (int)($this->settings['subscriberStoragePid'] ?? 0);
+        $storagePid = (int) ($this->settings['subscriberStoragePid'] ?? 0);
         $siteIdentifier = $this->resolveSiteIdentifier();
-        $feUserUid = (int)$this->context->getPropertyFromAspect('frontend.user', 'id');
+        $feUserUid = (int) $this->context->getPropertyFromAspect('frontend.user', 'id');
 
         $subscriber = $this->subscriberService->optIn($email, $siteIdentifier, $storagePid, $feUserUid);
 
@@ -87,7 +86,7 @@ class NewsletterController extends AbstractActionController
 
     private function buildPublicUri(string $action, array $arguments): string
     {
-        return (string)$this->uriBuilder
+        return (string) $this->uriBuilder
             ->reset()
             ->setCreateAbsoluteUri(true)
             ->uriFor($action, $arguments, 'Newsletter', 'MaiNewsletter', 'Newsletter');
@@ -116,6 +115,6 @@ class NewsletterController extends AbstractActionController
             'mai_newsletter',
         );
 
-        return ($translated ?? '') !== '' ? (string)$translated : $default;
+        return ($translated ?? '') !== '' ? (string) $translated : $default;
     }
 }

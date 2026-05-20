@@ -15,8 +15,7 @@ class SubscriberService
         private readonly SubscriberRepository $subscriberRepository,
         private readonly PersistenceManagerInterface $persistenceManager,
         private readonly Random $random,
-    ) {
-    }
+    ) {}
 
     public function optIn(string $email, string $site, int $storagePid, int $feUserUid = 0): Subscriber
     {

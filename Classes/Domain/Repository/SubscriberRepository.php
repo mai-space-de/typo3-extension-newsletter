@@ -15,7 +15,7 @@ use TYPO3\CMS\Extbase\Persistence\Repository;
 class SubscriberRepository extends Repository
 {
     /**
-     * @var array<string, string>
+     * @var array<non-empty-string, 'ASC'|'DESC'>
      */
     protected $defaultOrderings = [
         'crdate' => QueryInterface::ORDER_DESCENDING,
@@ -29,7 +29,7 @@ class SubscriberRepository extends Repository
             $query->logicalAnd(
                 $query->equals('email', $email),
                 $query->equals('site', $site),
-            )
+            ),
         );
 
         $result = $query->execute()->getFirst();

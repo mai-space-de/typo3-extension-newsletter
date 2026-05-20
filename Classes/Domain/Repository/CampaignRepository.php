@@ -15,7 +15,7 @@ use TYPO3\CMS\Extbase\Persistence\Repository;
 class CampaignRepository extends Repository
 {
     /**
-     * @var array<string, string>
+     * @var array<non-empty-string, 'ASC'|'DESC'>
      */
     protected $defaultOrderings = [
         'crdate' => QueryInterface::ORDER_DESCENDING,
@@ -42,7 +42,7 @@ class CampaignRepository extends Repository
             $query->logicalAnd(
                 $query->equals('status', Campaign::STATUS_SCHEDULED),
                 $query->lessThanOrEqual('scheduledAt', $now->getTimestamp()),
-            )
+            ),
         );
 
         return $query->execute();
