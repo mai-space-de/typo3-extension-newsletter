@@ -1,6 +1,6 @@
 {
     "name": "maispace/mai-newsletter",
-    "description": "Newsletter management extension. **Owns the canonical subscriber record** \u2014 all opt-in/opt-out operations across the project write to this extension's subscriber table. Email dispatch goes through `mai_mail`.",
+    "description": "Newsletter management extension. **Owns the canonical subscriber record** — all opt-in/opt-out operations across the project write to this extension's subscriber table. Email dispatch goes through `mai_mail`.",
     "type": "typo3-cms-extension",
     "license": "GPL-2.0-or-later",
     "authors": [
@@ -9,19 +9,10 @@
             "role": "Developer"
         }
     ],
-    "repositories": [
-        {
-            "type": "path",
-            "url": "../*",
-            "options": {
-                "symlink": true
-            }
-        }
-    ],
     "require": {
         "php": "^8.2",
-        "maispace/mai-base": "@dev",
-        "maispace/mai-mail": "@dev",
+        "maispace/mai-base": "^14.0",
+        "maispace/mai-mail": "^14.0",
         "typo3/cms-core": "^14.1",
         "typo3/cms-extbase": "^14.1",
         "typo3/cms-fluid": "^14.1",
