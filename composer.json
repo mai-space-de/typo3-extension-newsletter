@@ -82,5 +82,7 @@
     },
     "suggest": {
         "maispace/mai-account": "Frontend opt-in UI on the user profile page"
-    }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
