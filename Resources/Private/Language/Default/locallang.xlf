@@ -63,6 +63,72 @@
             <trans-unit id="plugin.newsletter.title">
                 <source>Newsletter: Subscribe</source>
             </trans-unit>
+
+            <!-- Backend module -->
+            <trans-unit id="backend.overview.title">
+                <source>Newsletter Overview</source>
+            </trans-unit>
+            <trans-unit id="backend.subscribers.title">
+                <source>Subscribed Subscribers</source>
+            </trans-unit>
+            <trans-unit id="backend.subscriber.email">
+                <source>Email</source>
+            </trans-unit>
+            <trans-unit id="backend.subscriber.status">
+                <source>Status</source>
+            </trans-unit>
+            <trans-unit id="backend.subscriber.confirmedAt">
+                <source>Confirmed At</source>
+            </trans-unit>
+            <trans-unit id="backend.subscriber.site">
+                <source>Site</source>
+            </trans-unit>
+            <trans-unit id="backend.noSubscribers">
+                <source>No subscribers found.</source>
+            </trans-unit>
+            <trans-unit id="backend.campaigns.title">
+                <source>Campaigns</source>
+            </trans-unit>
+            <trans-unit id="backend.campaign.title">
+                <source>Title</source>
+            </trans-unit>
+            <trans-unit id="backend.campaign.subject">
+                <source>Subject</source>
+            </trans-unit>
+            <trans-unit id="backend.campaign.status">
+                <source>Status</source>
+            </trans-unit>
+            <trans-unit id="backend.campaign.recipients">
+                <source>Recipients</source>
+            </trans-unit>
+            <trans-unit id="backend.noCampaigns">
+                <source>No campaigns found.</source>
+            </trans-unit>
+            <trans-unit id="backend.campaign.actions">
+                <source>Actions</source>
+            </trans-unit>
+            <trans-unit id="backend.campaign.send">
+                <source>Send Now</source>
+            </trans-unit>
+            <trans-unit id="backend.campaign.schedule">
+                <source>Schedule</source>
+            </trans-unit>
+
+            <trans-unit id="backend.pendingSubscribers.title">
+                <source>Pending Subscribers</source>
+            </trans-unit>
+            <trans-unit id="backend.subscriber.registeredAt">
+                <source>Registered At</source>
+            </trans-unit>
+            <trans-unit id="backend.pendingSubscriber.approve">
+                <source>Approve</source>
+            </trans-unit>
+            <trans-unit id="backend.pendingSubscriber.reject">
+                <source>Reject</source>
+            </trans-unit>
+            <trans-unit id="backend.noPendingSubscribers">
+                <source>No pending subscribers found.</source>
+            </trans-unit>
         </body>
     </file>
 </xliff>
