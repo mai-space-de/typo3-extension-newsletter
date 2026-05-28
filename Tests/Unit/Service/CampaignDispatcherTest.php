@@ -10,6 +10,7 @@ use Maispace\MaiNewsletter\Domain\Model\Subscriber;
 use Maispace\MaiNewsletter\Domain\Repository\CampaignRepository;
 use Maispace\MaiNewsletter\Domain\Repository\SubscriberRepository;
 use Maispace\MaiNewsletter\Service\CampaignDispatcher;
+use Maispace\MaiNewsletter\Service\TrackingIdGeneratorInterface;
 use PHPUnit\Framework\Attributes\Test;
 use PHPUnit\Framework\MockObject\MockObject;
 use PHPUnit\Framework\TestCase;
@@ -31,6 +32,7 @@ final class CampaignDispatcherTest extends TestCase
     private PersistenceManagerInterface&MockObject $persistenceManager;
     private SiteFinder&MockObject $siteFinder;
     private ConnectionPool&MockObject $connectionPool;
+    private TrackingIdGeneratorInterface&MockObject $trackingIdGenerator;
     private CampaignDispatcher $subject;
 
     protected function setUp(): void
@@ -41,6 +43,10 @@ final class CampaignDispatcherTest extends TestCase
         $this->persistenceManager = $this->createMock(PersistenceManagerInterface::class);
         $this->siteFinder = $this->createMock(SiteFinder::class);
         $this->connectionPool = $this->createMock(ConnectionPool::class);
+        $this->trackingIdGenerator = $this->createMock(TrackingIdGeneratorInterface::class);
+        $this->trackingIdGenerator->method('generate')->willReturnCallback(
+            static fn(int $uid): string => sprintf('%d-testtrackingid', $uid),
+        );
 
         $this->subject = new CampaignDispatcher(
             $this->campaignRepository,
@@ -49,6 +55,7 @@ final class CampaignDispatcherTest extends TestCase
             $this->persistenceManager,
             $this->siteFinder,
             $this->connectionPool,
+            $this->trackingIdGenerator,
         );
     }
 
@@ -185,6 +192,7 @@ final class CampaignDispatcherTest extends TestCase
                 self::assertSame([
                     'List-Unsubscribe' => '<https://example.com/newsletter/unsubscribe?tx_mainewsletter_newsletter%5Baction%5D=unsubscribe&tx_mainewsletter_newsletter%5Btoken%5D=test-token-123>',
                     'List-Unsubscribe-Post' => 'List-Unsubscribe=One-Click',
+                    'X-Campaign-Tracking-Id' => '0-testtrackingid',
                 ], $headers);
             });
 

@@ -24,6 +24,7 @@ final class CampaignDispatcher
         private readonly PersistenceManagerInterface $persistenceManager,
         private readonly SiteFinder $siteFinder,
         private readonly ConnectionPool $connectionPool,
+        private readonly TrackingIdGeneratorInterface $trackingIdGenerator,
     ) {}
 
     public function dispatch(Campaign $campaign): int
@@ -38,8 +39,14 @@ final class CampaignDispatcher
         $subscribers = $this->subscriberRepository->findSubscribed();
         $count = 0;
 
+        $this->trackingIdGenerator->reset();
+
+        $campaignUid = (int) $campaign->getUid();
+
         foreach ($subscribers as $subscriber) {
+            $trackingId = $this->trackingIdGenerator->generate($campaignUid);
             $headers = $this->buildUnsubscribeHeaders($subscriber);
+            $headers['X-Campaign-Tracking-Id'] = $trackingId;
             $this->mailService->queue(
                 $subscriber->getEmail(),
                 $campaign->getSubject(),
