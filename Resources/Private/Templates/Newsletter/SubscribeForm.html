@@ -4,7 +4,22 @@
 <f:section name="main">
     <div class="mai-newsletter-subscribe">
         <h2><f:translate key="subscribe.title" extensionName="mai_newsletter" default="Subscribe to our newsletter"/></h2>
-        <f:flashMessages/>
+        <f:flashMessages as="flashMessages">
+            <f:if condition="{flashMessages}">
+                <f:for each="{flashMessages}" as="flashMessage">
+                    <f:if condition="{flashMessage.severity} == 'OK'">
+                        <div class="mai-newsletter-subscribe__success" role="status" data-testid="newsletter-success">
+                            <p class="mai-newsletter-subscribe__success-message">{flashMessage.message}</p>
+                        </div>
+                    </f:if>
+                    <f:if condition="{flashMessage.severity} != 'OK'">
+                        <div class="mai-newsletter-subscribe__flash-error" role="alert">
+                            <p class="mai-newsletter-subscribe__flash-error-message">{flashMessage.message}</p>
+                        </div>
+                    </f:if>
+                </f:for>
+            </f:if>
+        </f:flashMessages>
         <f:form.validationResults>
             <f:if condition="{validationResults.flattenedErrors}">
                 <div class="mai-newsletter-subscribe__errors" role="alert" data-testid="email-error">
@@ -18,11 +33,14 @@
         </f:form.validationResults>
         <f:form action="subscribe" method="post" data-testid="newsletter-form">
             <div class="form-group">
-                <label for="email"><f:translate key="subscribe.email" extensionName="mai_newsletter" default="E-Mail"/></label>
-                <f:form.textfield id="email" name="email" type="email" class="form-control" required="true" autocomplete="email"/>
+                <label for="mai-newsletter-email"><f:translate key="subscribe.email" extensionName="mai_newsletter" default="E-Mail"/></label>
+                <f:form.textfield id="mai-newsletter-email" name="email" type="email" class="form-control" required="true" autocomplete="email"/>
             </div>
             <div class="form-actions">
-                <f:form.submit value="{f:translate(key: 'subscribe.submit', extensionName: 'mai_newsletter', default: 'Subscribe')}" class="btn btn-primary"/>
+                <f:variable name="subscribeSubmitLabel">
+                    <f:translate key="subscribe.submit" extensionName="mai_newsletter" default="Subscribe"/>
+                </f:variable>
+                <f:form.submit value="{subscribeSubmitLabel}" class="btn btn-primary"/>
             </div>
         </f:form>
     </div>
