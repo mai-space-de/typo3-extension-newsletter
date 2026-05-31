@@ -37,10 +37,7 @@
                 <f:form.textfield id="mai-newsletter-email" name="email" type="email" class="form-control" required="true" autocomplete="email"/>
             </div>
             <div class="form-actions">
-                <f:variable name="subscribeSubmitLabel">
-                    <f:translate key="subscribe.submit" extensionName="mai_newsletter" default="Subscribe"/>
-                </f:variable>
-                <f:form.submit value="{subscribeSubmitLabel}" class="btn btn-primary"/>
+                <f:form.submit value="{f:translate(key: 'subscribe.submit', extensionName: 'mai_newsletter', default: 'Subscribe')}" class="btn btn-primary"/>
             </div>
         </f:form>
     </div>
