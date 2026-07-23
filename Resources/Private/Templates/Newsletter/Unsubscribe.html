@@ -2,17 +2,35 @@
       data-namespace-typo3-fluid="true">
 <f:layout name="Default"/>
 <f:section name="main">
-    <div class="mai-newsletter-unsubscribe">
+    <section class="mai-newsletter-unsubscribe">
         <f:if condition="{success}">
             <f:then>
-                <h2><f:translate key="unsubscribe.success.title" extensionName="mai_newsletter" default="Unsubscribed"/></h2>
-                <p><f:translate key="unsubscribe.success.message" extensionName="mai_newsletter" default="You have been removed from the newsletter list."/></p>
+                <div class="mai-newsletter-unsubscribe__status mai-newsletter-unsubscribe__status--success">
+                    <span class="mai-newsletter-unsubscribe__icon" aria-hidden="true">&#10003;</span>
+                    <div class="mai-newsletter-unsubscribe__content">
+                        <h2 class="mai-newsletter-unsubscribe__title">
+                            <f:translate key="unsubscribe.success.title" extensionName="mai_newsletter" default="Unsubscribed"/>
+                        </h2>
+                        <p class="mai-newsletter-unsubscribe__message">
+                            <f:translate key="unsubscribe.success.message" extensionName="mai_newsletter" default="You have been removed from the newsletter list."/>
+                        </p>
+                    </div>
+                </div>
             </f:then>
             <f:else>
-                <h2><f:translate key="unsubscribe.fail.title" extensionName="mai_newsletter" default="Unsubscribe failed"/></h2>
-                <p><f:translate key="unsubscribe.fail.message" extensionName="mai_newsletter" default="The unsubscribe link is invalid or has already been used."/></p>
+                <div class="mai-newsletter-unsubscribe__status mai-newsletter-unsubscribe__status--fail">
+                    <span class="mai-newsletter-unsubscribe__icon" aria-hidden="true">&#10007;</span>
+                    <div class="mai-newsletter-unsubscribe__content">
+                        <h2 class="mai-newsletter-unsubscribe__title">
+                            <f:translate key="unsubscribe.fail.title" extensionName="mai_newsletter" default="Unsubscribe failed"/>
+                        </h2>
+                        <p class="mai-newsletter-unsubscribe__message">
+                            <f:translate key="unsubscribe.fail.message" extensionName="mai_newsletter" default="The unsubscribe link is invalid or has already been used."/>
+                        </p>
+                    </div>
+                </div>
             </f:else>
         </f:if>
-    </div>
+    </section>
 </f:section>
 </html>

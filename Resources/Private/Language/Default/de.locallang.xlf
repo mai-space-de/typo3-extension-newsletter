@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" target-language="de" datatype="plaintext" original="messages" date="2026-04-19T00:00:00Z" product-name="mai_newsletter">
+        <header/>
+        <body>
+            <trans-unit id="subscribe.title">
+                <source>Subscribe to our newsletter</source>
+                <target>Abonniere unseren Newsletter</target>
+            </trans-unit>
+            <trans-unit id="subscribe.email">
+                <source>E-Mail</source>
+                <target>E-Mail</target>
+            </trans-unit>
+            <trans-unit id="subscribe.submit">
+                <source>Subscribe</source>
+                <target>Abonnieren</target>
+            </trans-unit>
+            <trans-unit id="subscribe.invalidEmail">
+                <source>Please enter a valid email address.</source>
+                <target>Bitte gib eine gültige E-Mail-Adresse ein.</target>
+            </trans-unit>
+            <trans-unit id="subscribe.alreadySubscribed">
+                <source>This email is already subscribed.</source>
+                <target>Diese E-Mail-Adresse ist bereits angemeldet.</target>
+            </trans-unit>
+            <trans-unit id="subscribe.confirmationSent">
+                <source>Please check your inbox to confirm your subscription.</source>
+                <target>Bitte bestätige dein Abonnement über die E-Mail in deinem Postfach.</target>
+            </trans-unit>
+            <trans-unit id="confirm.success.title">
+                <source>Subscription confirmed</source>
+                <target>Abonnement bestätigt</target>
+            </trans-unit>
+            <trans-unit id="confirm.success.message">
+                <source>Thanks! Your subscription is now active.</source>
+                <target>Danke! Dein Abonnement ist jetzt aktiv.</target>
+            </trans-unit>
+            <trans-unit id="confirm.fail.title">
+                <source>Confirmation failed</source>
+                <target>Bestätigung fehlgeschlagen</target>
+            </trans-unit>
+            <trans-unit id="confirm.fail.message">
+                <source>The confirmation link is invalid or has already been used.</source>
+                <target>Der Bestätigungslink ist ungültig oder wurde bereits verwendet.</target>
+            </trans-unit>
+            <trans-unit id="unsubscribe.success.title">
+                <source>Unsubscribed</source>
+                <target>Abgemeldet</target>
+            </trans-unit>
+            <trans-unit id="unsubscribe.success.message">
+                <source>You have been removed from the newsletter list.</source>
+                <target>Du wurdest aus dem Newsletter-Verteiler entfernt.</target>
+            </trans-unit>
+            <trans-unit id="unsubscribe.fail.title">
+                <source>Unsubscribe failed</source>
+                <target>Abmeldung fehlgeschlagen</target>
+            </trans-unit>
+            <trans-unit id="unsubscribe.fail.message">
+                <source>The unsubscribe link is invalid or has already been used.</source>
+                <target>Der Abmeldelink ist ungültig oder wurde bereits verwendet.</target>
+            </trans-unit>
+            <trans-unit id="email.confirm.subject">
+                <source>Please confirm your newsletter subscription</source>
+                <target>Bitte bestätige dein Newsletter-Abonnement</target>
+            </trans-unit>
+            <trans-unit id="email.confirm.greeting">
+                <source>Hello,</source>
+                <target>Hallo,</target>
+            </trans-unit>
+            <trans-unit id="email.confirm.body">
+                <source>Please confirm your newsletter subscription by clicking the link below:</source>
+                <target>Bitte bestätige dein Newsletter-Abonnement über den folgenden Link:</target>
+            </trans-unit>
+            <trans-unit id="email.confirm.disclaimer">
+                <source>If you did not request this subscription you can ignore this email.</source>
+                <target>Wenn du dieses Abonnement nicht angefordert hast, kannst du diese E-Mail ignorieren.</target>
+            </trans-unit>
+            <trans-unit id="email.confirm.unsubscribe">
+                <source>Unsubscribe</source>
+                <target>Abmelden</target>
+            </trans-unit>
+            <trans-unit id="plugin.newsletter.title">
+                <source>Newsletter: Subscribe</source>
+                <target>Newsletter: Anmeldung</target>
+            </trans-unit>
+
+            <!-- Backend module -->
+            <trans-unit id="backend.overview.title">
+                <source>Newsletter Overview</source>
+                <target>Newsletter-Übersicht</target>
+            </trans-unit>
+            <trans-unit id="backend.subscribers.title">
+                <source>Subscribed Subscribers</source>
+                <target>Angemeldete Abonnenten</target>
+            </trans-unit>
+            <trans-unit id="backend.subscriber.email">
+                <source>Email</source>
+                <target>E-Mail</target>
+            </trans-unit>
+            <trans-unit id="backend.subscriber.status">
+                <source>Status</source>
+                <target>Status</target>
+            </trans-unit>
+            <trans-unit id="backend.subscriber.confirmedAt">
+                <source>Confirmed At</source>
+                <target>Bestätigt am</target>
+            </trans-unit>
+            <trans-unit id="backend.subscriber.site">
+                <source>Site</source>
+                <target>Seite</target>
+            </trans-unit>
+            <trans-unit id="backend.noSubscribers">
+                <source>No subscribers found.</source>
+                <target>Keine Abonnenten gefunden.</target>
+            </trans-unit>
+            <trans-unit id="backend.campaigns.title">
+                <source>Campaigns</source>
+                <target>Kampagnen</target>
+            </trans-unit>
+            <trans-unit id="backend.campaign.title">
+                <source>Title</source>
+                <target>Titel</target>
+            </trans-unit>
+            <trans-unit id="backend.campaign.subject">
+                <source>Subject</source>
+                <target>Betreff</target>
+            </trans-unit>
+            <trans-unit id="backend.campaign.status">
+                <source>Status</source>
+                <target>Status</target>
+            </trans-unit>
+            <trans-unit id="backend.campaign.recipients">
+                <source>Recipients</source>
+                <target>Empfänger</target>
+            </trans-unit>
+            <trans-unit id="backend.noCampaigns">
+                <source>No campaigns found.</source>
+                <target>Keine Kampagnen gefunden.</target>
+            </trans-unit>
+            <trans-unit id="backend.campaign.actions">
+                <source>Actions</source>
+                <target>Aktionen</target>
+            </trans-unit>
+            <trans-unit id="backend.campaign.send">
+                <source>Send Now</source>
+                <target>Jetzt senden</target>
+            </trans-unit>
+            <trans-unit id="backend.campaign.schedule">
+                <source>Schedule</source>
+                <target>Planen</target>
+            </trans-unit>
+
+            <trans-unit id="backend.pendingSubscribers.title">
+                <source>Pending Subscribers</source>
+                <target>Ausstehende Abonnenten</target>
+            </trans-unit>
+            <trans-unit id="backend.subscriber.registeredAt">
+                <source>Registered At</source>
+                <target>Registriert am</target>
+            </trans-unit>
+            <trans-unit id="backend.pendingSubscriber.approve">
+                <source>Approve</source>
+                <target>Genehmigen</target>
+            </trans-unit>
+            <trans-unit id="backend.pendingSubscriber.reject">
+                <source>Reject</source>
+                <target>Ablehnen</target>
+            </trans-unit>
+            <trans-unit id="backend.noPendingSubscribers">
+                <source>No pending subscribers found.</source>
+                <target>Keine ausstehenden Abonnenten gefunden.</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

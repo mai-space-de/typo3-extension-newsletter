@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="messages" date="2026-04-19T00:00:00Z" product-name="mai_newsletter">
+        <header/>
+        <body>
+            <trans-unit id="subscribe.title">
+                <source>Subscribe to our newsletter</source>
+            </trans-unit>
+            <trans-unit id="subscribe.email">
+                <source>E-Mail</source>
+            </trans-unit>
+		<trans-unit id="subscribe.lead">
+			<source>Stay up to date — practical, helpful, warm-hearted. We'll keep you posted about our work, events and opportunities to get involved.</source>
+		</trans-unit>
+		<trans-unit id="subscribe.submit">
+			<source>Subscribe</source>
+		</trans-unit>
+		<trans-unit id="subscribe.privacy">
+			<source>We respect your privacy. You can unsubscribe at any time.</source>
+		</trans-unit>
+            <trans-unit id="subscribe.invalidEmail">
+                <source>Please enter a valid email address.</source>
+            </trans-unit>
+            <trans-unit id="subscribe.alreadySubscribed">
+                <source>This email is already subscribed.</source>
+            </trans-unit>
+            <trans-unit id="subscribe.confirmationSent">
+                <source>Please check your inbox to confirm your subscription.</source>
+            </trans-unit>
+            <trans-unit id="confirm.success.title">
+                <source>Subscription confirmed</source>
+            </trans-unit>
+            <trans-unit id="confirm.success.message">
+                <source>Thanks! Your subscription is now active.</source>
+            </trans-unit>
+            <trans-unit id="confirm.fail.title">
+                <source>Confirmation failed</source>
+            </trans-unit>
+            <trans-unit id="confirm.fail.message">
+                <source>The confirmation link is invalid or has already been used.</source>
+            </trans-unit>
+            <trans-unit id="unsubscribe.success.title">
+                <source>Unsubscribed</source>
+            </trans-unit>
+            <trans-unit id="unsubscribe.success.message">
+                <source>You have been removed from the newsletter list.</source>
+            </trans-unit>
+            <trans-unit id="unsubscribe.fail.title">
+                <source>Unsubscribe failed</source>
+            </trans-unit>
+            <trans-unit id="unsubscribe.fail.message">
+                <source>The unsubscribe link is invalid or has already been used.</source>
+            </trans-unit>
+            <trans-unit id="email.confirm.subject">
+                <source>Please confirm your newsletter subscription</source>
+            </trans-unit>
+            <trans-unit id="email.confirm.greeting">
+                <source>Hello,</source>
+            </trans-unit>
+            <trans-unit id="email.confirm.body">
+                <source>Please confirm your newsletter subscription by clicking the link below:</source>
+            </trans-unit>
+            <trans-unit id="email.confirm.disclaimer">
+                <source>If you did not request this subscription you can ignore this email.</source>
+            </trans-unit>
+            <trans-unit id="email.confirm.unsubscribe">
+                <source>Unsubscribe</source>
+            </trans-unit>
+            <trans-unit id="plugin.newsletter.title">
+                <source>Newsletter: Subscribe</source>
+            </trans-unit>
+
+            <!-- Backend module -->
+            <trans-unit id="backend.overview.title">
+                <source>Newsletter Overview</source>
+            </trans-unit>
+            <trans-unit id="backend.subscribers.title">
+                <source>Subscribed Subscribers</source>
+            </trans-unit>
+            <trans-unit id="backend.subscriber.email">
+                <source>Email</source>
+            </trans-unit>
+            <trans-unit id="backend.subscriber.status">
+                <source>Status</source>
+            </trans-unit>
+            <trans-unit id="backend.subscriber.confirmedAt">
+                <source>Confirmed At</source>
+            </trans-unit>
+            <trans-unit id="backend.subscriber.site">
+                <source>Site</source>
+            </trans-unit>
+            <trans-unit id="backend.noSubscribers">
+                <source>No subscribers found.</source>
+            </trans-unit>
+            <trans-unit id="backend.campaigns.title">
+                <source>Campaigns</source>
+            </trans-unit>
+            <trans-unit id="backend.campaign.title">
+                <source>Title</source>
+            </trans-unit>
+            <trans-unit id="backend.campaign.subject">
+                <source>Subject</source>
+            </trans-unit>
+            <trans-unit id="backend.campaign.status">
+                <source>Status</source>
+            </trans-unit>
+            <trans-unit id="backend.campaign.recipients">
+                <source>Recipients</source>
+            </trans-unit>
+            <trans-unit id="backend.noCampaigns">
+                <source>No campaigns found.</source>
+            </trans-unit>
+            <trans-unit id="backend.campaign.actions">
+                <source>Actions</source>
+            </trans-unit>
+            <trans-unit id="backend.campaign.send">
+                <source>Send Now</source>
+            </trans-unit>
+            <trans-unit id="backend.campaign.schedule">
+                <source>Schedule</source>
+            </trans-unit>
+
+            <trans-unit id="backend.pendingSubscribers.title">
+                <source>Pending Subscribers</source>
+            </trans-unit>
+            <trans-unit id="backend.subscriber.registeredAt">
+                <source>Registered At</source>
+            </trans-unit>
+            <trans-unit id="backend.pendingSubscriber.approve">
+                <source>Approve</source>
+            </trans-unit>
+            <trans-unit id="backend.pendingSubscriber.reject">
+                <source>Reject</source>
+            </trans-unit>
+            <trans-unit id="backend.noPendingSubscribers">
+                <source>No pending subscribers found.</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

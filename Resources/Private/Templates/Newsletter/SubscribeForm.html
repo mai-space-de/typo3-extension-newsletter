@@ -2,14 +2,23 @@
       data-namespace-typo3-fluid="true">
 <f:layout name="Default"/>
 <f:section name="main">
-    <div class="mai-newsletter-subscribe">
-        <h2><f:translate key="subscribe.title" extensionName="mai_newsletter" default="Subscribe to our newsletter"/></h2>
+    <section class="mai-newsletter-subscribe">
+        <header class="mai-newsletter-subscribe__header">
+            <h2 class="mai-newsletter-subscribe__title">
+                <f:translate key="subscribe.title" extensionName="mai_newsletter" default="Subscribe to our newsletter"/>
+            </h2>
+            <p class="mai-newsletter-subscribe__lead">
+                <f:translate key="subscribe.lead" extensionName="mai_newsletter" default="Stay up to date — practical, helpful, warm-hearted. We'll keep you posted about our work, events and opportunities to get involved."/>
+            </p>
+        </header>
+
         <f:flashMessages as="flashMessages">
             <f:if condition="{flashMessages}">
                 <f:for each="{flashMessages}" as="flashMessage">
                     <f:if condition="{flashMessage.severity} == 'OK'">
                         <div class="mai-newsletter-subscribe__success" role="status" data-testid="newsletter-success">
-                            <p class="mai-newsletter-subscribe__success-message">{flashMessage.message}</p>
+                            <span class="mai-newsletter-subscribe__success-icon" aria-hidden="true">&#10003;</span>
+                            <p class="mai-newsletter-subscribe__success-text">{flashMessage.message}</p>
                         </div>
                     </f:if>
                     <f:if condition="{flashMessage.severity} != 'OK'">
@@ -20,6 +29,7 @@
                 </f:for>
             </f:if>
         </f:flashMessages>
+
         <f:form.validationResults>
             <f:if condition="{validationResults.flattenedErrors}">
                 <div class="mai-newsletter-subscribe__errors" role="alert" data-testid="email-error">
@@ -31,15 +41,30 @@
                 </div>
             </f:if>
         </f:form.validationResults>
-        <f:form action="subscribe" method="post" data-testid="newsletter-form">
-            <div class="form-group">
-                <label for="mai-newsletter-email"><f:translate key="subscribe.email" extensionName="mai_newsletter" default="E-Mail"/></label>
-                <f:form.textfield id="mai-newsletter-email" name="email" type="email" class="form-control" required="true" autocomplete="email"/>
+
+        <f:form action="subscribe" method="post" class="mai-newsletter-subscribe__form" data-testid="newsletter-form">
+            <div class="mai-newsletter-subscribe__field">
+                <label for="mai-newsletter-email" class="mai-newsletter-subscribe__label">
+                    <f:translate key="subscribe.email" extensionName="mai_newsletter" default="E-Mail"/>
+                </label>
+                <f:form.textfield
+                    id="mai-newsletter-email"
+                    property="email"
+                    type="email"
+                    required="true"
+                    autocomplete="email"
+                    class="mai-newsletter-subscribe__input"
+                    placeholder="max@beispiel.de"
+                />
             </div>
-            <div class="form-actions">
-                <f:form.submit value="{f:translate(key: 'subscribe.submit', extensionName: 'mai_newsletter', default: 'Subscribe')}" class="btn btn-primary"/>
-            </div>
+            <f:form.submit
+                value="{f:translate(key: 'subscribe.submit', extensionName: 'mai_newsletter', default: 'Subscribe')}"
+                class="mai-newsletter-subscribe__submit"
+            />
+            <p class="mai-newsletter-subscribe__legal">
+                <f:translate key="subscribe.privacy" extensionName="mai_newsletter" default="We respect your privacy. You can unsubscribe at any time."/>
+            </p>
         </f:form>
-    </div>
+    </section>
 </f:section>
 </html>

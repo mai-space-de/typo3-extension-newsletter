@@ -2,17 +2,36 @@
       data-namespace-typo3-fluid="true">
 <f:layout name="Default"/>
 <f:section name="main">
-    <div class="mai-newsletter-confirm" data-testid="newsletter-success">
+    <section class="mai-newsletter-confirm" data-testid="newsletter-success">
         <f:if condition="{success}">
             <f:then>
-                <h2><f:translate key="confirm.success.title" extensionName="mai_newsletter" default="Subscription confirmed"/></h2>
-                <p><f:translate key="confirm.success.message" extensionName="mai_newsletter" default="Thanks! Your subscription is now active."/></p>
+                <div class="mai-newsletter-confirm__status mai-newsletter-confirm__status--success">
+                    <span class="mai-newsletter-confirm__icon" aria-hidden="true">&#10003;</span>
+                    <div class="mai-newsletter-confirm__content">
+                        <h2 class="mai-newsletter-confirm__title">
+                            <f:translate key="confirm.success.title" extensionName="mai_newsletter" default="Subscription confirmed"/>
+                        </h2>
+                        <p class="mai-newsletter-confirm__message">
+                            <f:translate key="confirm.success.message" extensionName="mai_newsletter" default="Thanks! Your subscription is now active."/>
+                            <f:translate key="confirm.success.next" extensionName="mai_newsletter" default="You'll hear from us soon — keep an eye on your inbox."/>
+                        </p>
+                    </div>
+                </div>
             </f:then>
             <f:else>
-                <h2><f:translate key="confirm.fail.title" extensionName="mai_newsletter" default="Confirmation failed"/></h2>
-                <p><f:translate key="confirm.fail.message" extensionName="mai_newsletter" default="The confirmation link is invalid or has already been used."/></p>
+                <div class="mai-newsletter-confirm__status mai-newsletter-confirm__status--fail">
+                    <span class="mai-newsletter-confirm__icon" aria-hidden="true">&#10007;</span>
+                    <div class="mai-newsletter-confirm__content">
+                        <h2 class="mai-newsletter-confirm__title">
+                            <f:translate key="confirm.fail.title" extensionName="mai_newsletter" default="Confirmation failed"/>
+                        </h2>
+                        <p class="mai-newsletter-confirm__message">
+                            <f:translate key="confirm.fail.message" extensionName="mai_newsletter" default="The confirmation link is invalid or has already been used."/>
+                        </p>
+                    </div>
+                </div>
             </f:else>
         </f:if>
-    </div>
+    </section>
 </f:section>
 </html>
