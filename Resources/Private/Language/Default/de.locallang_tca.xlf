@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" target-language="de" datatype="plaintext" original="messages"
+          date="2025-01-01T00:00:00Z" product-name="mai_newsletter">
+        <header/>
+        <body>
+            <trans-unit id="table.tx_mainewsletter_subscriber">
+                <source>Newsletter Subscriber</source>
+                <target>Newsletter-Abonnent</target>
+            </trans-unit>
+            <trans-unit id="tx_mainewsletter_subscriber.email">
+                <source>E-Mail</source>
+                <target>E-Mail</target>
+            </trans-unit>
+            <trans-unit id="tx_mainewsletter_subscriber.status">
+                <source>Status</source>
+                <target>Status</target>
+            </trans-unit>
+            <trans-unit id="tx_mainewsletter_subscriber.status.pending">
+                <source>Pending</source>
+                <target>Ausstehend</target>
+            </trans-unit>
+            <trans-unit id="tx_mainewsletter_subscriber.status.subscribed">
+                <source>Subscribed</source>
+                <target>Abonniert</target>
+            </trans-unit>
+            <trans-unit id="tx_mainewsletter_subscriber.status.unsubscribed">
+                <source>Unsubscribed</source>
+                <target>Abbestellt</target>
+            </trans-unit>
+            <trans-unit id="tx_mainewsletter_subscriber.token">
+                <source>Token</source>
+                <target>Token</target>
+            </trans-unit>
+            <trans-unit id="tx_mainewsletter_subscriber.confirmed_at">
+                <source>Confirmed At</source>
+                <target>Bestätigt am</target>
+            </trans-unit>
+            <trans-unit id="tx_mainewsletter_subscriber.unsubscribed_at">
+                <source>Unsubscribed At</source>
+                <target>Abbestellt am</target>
+            </trans-unit>
+            <trans-unit id="tx_mainewsletter_subscriber.site">
+                <source>Site</source>
+                <target>Website</target>
+            </trans-unit>
+            <trans-unit id="palette.dates">
+                <source>Dates</source>
+                <target>Daten</target>
+            </trans-unit>
+            <trans-unit id="table.tx_mainewsletter_campaign">
+                <source>Newsletter Campaign</source>
+                <target>Newsletter-Kampagne</target>
+            </trans-unit>
+            <trans-unit id="tx_mainewsletter_campaign.title">
+                <source>Title</source>
+                <target>Titel</target>
+            </trans-unit>
+            <trans-unit id="tx_mainewsletter_campaign.subject">
+                <source>Subject</source>
+                <target>Betreff</target>
+            </trans-unit>
+            <trans-unit id="tx_mainewsletter_campaign.body">
+                <source>Body</source>
+                <target>Text</target>
+            </trans-unit>
+            <trans-unit id="tx_mainewsletter_campaign.status">
+                <source>Status</source>
+                <target>Status</target>
+            </trans-unit>
+            <trans-unit id="tx_mainewsletter_campaign.status.draft">
+                <source>Draft</source>
+                <target>Entwurf</target>
+            </trans-unit>
+            <trans-unit id="tx_mainewsletter_campaign.status.scheduled">
+                <source>Scheduled</source>
+                <target>Geplant</target>
+            </trans-unit>
+            <trans-unit id="tx_mainewsletter_campaign.status.sent">
+                <source>Sent</source>
+                <target>Versendet</target>
+            </trans-unit>
+            <trans-unit id="tx_mainewsletter_campaign.scheduled_at">
+                <source>Scheduled At</source>
+                <target>Geplant für</target>
+            </trans-unit>
+            <trans-unit id="tx_mainewsletter_campaign.sent_at">
+                <source>Sent At</source>
+                <target>Versendet am</target>
+            </trans-unit>
+            <trans-unit id="tx_mainewsletter_campaign.recipient_count">
+                <source>Recipients</source>
+                <target>Empfänger</target>
+            </trans-unit>
+            <trans-unit id="palette.dispatch">
+                <source>Dispatch</source>
+                <target>Versand</target>
+            </trans-unit>
+            <trans-unit id="palette.language">
+                <source>Language</source>
+                <target>Sprache</target>
+            </trans-unit>
+            <trans-unit id="palette.hidden">
+                <source>Visibility</source>
+                <target>Sichtbarkeit</target>
+            </trans-unit>
+            <trans-unit id="palette.access">
+                <source>Access</source>
+                <target>Zugriff</target>
+            </trans-unit>
+            <trans-unit id="tab.dispatch">
+                <source>Dispatch</source>
+                <target>Versand</target>
+            </trans-unit>
+            <trans-unit id="tab.language">
+                <source>Language</source>
+                <target>Sprache</target>
+            </trans-unit>
+            <trans-unit id="tab.access">
+                <source>Access</source>
+                <target>Zugriff</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
