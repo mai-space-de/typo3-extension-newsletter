@@ -12,6 +12,7 @@ use Maispace\MaiNewsletter\Service\SubscriberService;
 use Psr\Http\Message\ResponseInterface;
 use TYPO3\CMS\Core\Context\Context;
 use TYPO3\CMS\Core\Site\SiteFinder;
+use TYPO3\CMS\Extbase\Attribute\RateLimit;
 
 class NewsletterController extends AbstractActionController
 {
@@ -29,6 +30,7 @@ class NewsletterController extends AbstractActionController
         return $this->htmlResponse();
     }
 
+    #[RateLimit(limit: 3, interval: '1 minute')]
     public function subscribeAction(string $email = ''): ResponseInterface
     {
         $email = trim($email);
